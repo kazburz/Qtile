@@ -1,0 +1,41 @@
+# Enable fading
+fading = true;
+fade-delta = 5;
+fade-in-step = 0.03;
+fade-out-step = 0.03;
+
+# Enable shadows
+shadow = true;
+shadow-radius = 12;
+shadow-offset-x = -15;
+shadow-offset-y = -15;
+shadow-opacity = 0.75;
+
+
+# Opacity 
+
+inactive-opacity = 0.93;
+active-opacity = 0.97;
+frame-opacity = 1;
+inactive-opacity-override = false;
+
+# Exclude certain windows from effects
+shadow-exclude = [
+    "name = 'Notification'",
+    "class_g = 'Conky'",
+    "class_g ?= 'Notify-osd'",
+    "class_g = 'Cairo-clock'"
+];
+
+blur:
+{
+method = "gaussian";
+size = 20; 
+deviation = 15;
+};
+# Backend to use (xrender or glx)
+backend = "glx";
+vsync = true;
+
+
+# --blur-method dual_kawase --blur-strength 7.
